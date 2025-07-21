@@ -1,1 +1,1 @@
-# tourzy
+# tourzy-landing-page

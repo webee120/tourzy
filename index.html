@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tourzy</title>
+
+    <!-- favicon -->
+    <link rel="icon" href="img/logo.ico" />
+    <!-- css -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "fwm5xmh",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <div id="wrap">
+      <header>
+        <div class="inner">
+          <h1>
+            <a href="#"><img src="img/logo.png" alt="tourzy" /></a>
+          </h1>
+
+          <nav>
+            <ul class="gnb">
+              <li data-section="1">home</li>
+              <li data-section="2">about us</li>
+              <li data-section="4">app</li>
+              <li data-section="6">partner</li>
+            </ul>
+          </nav>
+        </div>
+        <!-- .inner -->
+      </header>
+
+      <div class="fullpage">
+        <section class="section home">
+          <div class="inner">
+            <h2>
+              <span>New wave of</span> <br />
+              Middle Mile & Last Mile
+            </h2>
+
+            <div class="main-visual">
+              <div class="swiper home-slide">
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide">
+                    <img
+                      src="img/main_visual01.png"
+                      alt="메인 슬라이드 이미지1"
+                    />
+                    <img
+                      src="img/main_visual01-m.png"
+                      alt="메인 슬라이드 이미지1"
+                    />
+                  </li>
+                  <li class="swiper-slide">
+                    <img
+                      src="img/main_visual02.png"
+                      alt="메인 슬라이드 이미지2"
+                    />
+                    <img
+                      src="img/main_visual02-m.png"
+                      alt="메인 슬라이드 이미지2"
+                    />
+                  </li>
+                  <li class="swiper-slide">
+                    <img
+                      src="img/main_visual03.png"
+                      alt="메인 슬라이드 이미지3"
+                    />
+                    <img
+                      src="img/main_visual03-m.png"
+                      alt="메인 슬라이드 이미지3"
+                    />
+                  </li>
+                </ul>
+
+                <div class="home-slide-btn">
+                  <button class="prev-btn">
+                    <img src="img/prev.png" alt="prev-btn" />
+                  </button>
+                  <button class="pause">
+                    <img src="img/pause.png" alt="pause" />
+                  </button>
+                  <button class="resume">
+                    <img src="img/resume.png" alt="resume" />
+                  </button>
+                  <button class="next-btn">
+                    <img src="img/next.png" alt="next-btn" />
+                  </button>
+                </div>
+              </div>
+              <!-- .swiper -->
+              <div class="txt-box">
+                <p>
+                  친환경 모빌리티 셰어링 <br />
+                  서비스의 퍼스트 무버 <br />
+                  <span>tourzy</span>
+                </p>
+                <p>
+                  투어지는 퍼스트 마일인 대중교통으로 이동 후 마이크로카나
+                  전기자전거 단거리 이동을 할 수 있는 미들 & 라스트 마일 특화
+                  MaaS 플랫폼 입니다.
+                </p>
+              </div>
+              <div class="main-bottom">
+                <div class="download">
+                  <h4>다운로드</h4>
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <img src="img/download1.png" alt="appstore" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img src="img/download2.png" alt="playstore" />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- .download -->
+                <div class="line"></div>
+                <ul class="service">
+                  <li>
+                    <h4>서비스 지역</h4>
+                    <p>
+                      투어지와 <br />
+                      친환경 공정여행을 <br />
+                      함께해 주세요.
+                    </p>
+                  </li>
+                  <li>
+                    <img src="img/service01.png" alt="해운대" />
+                    <span>해운대</span>
+                  </li>
+                  <li>
+                    <img src="img/service02.png" alt="오리시아 관광단지" />
+                    <span>오리시아 <br />관광단지</span>
+                  </li>
+                  <li>
+                    <img src="img/service03.png" alt="해운대" />
+                    <span>감천 <br />문화마을</span>
+                  </li>
+                  <li>
+                    <img src="img/service04.png" alt="광안리" />
+                    <span>광안리</span>
+                  </li>
+                </ul>
+                <!-- service -->
+              </div>
+              <!-- .main-bottom -->
+            </div>
+          </div>
+          <!-- .inner -->
+        </section>
+        <!-- .home -->
+
+        <section class="section ideology">
+          <div class="inner">
+            <h2>
+              <span>TOURZY는</span>
+              <br />
+              탄소 중립형 그린 스마트 여행<span>을 실천합니다.</span>
+            </h2>
+          </div>
+          <!-- .inner -->
+
+          <div class="inner">
+            <ul>
+              <li>
+                <div>
+                  <span class="txt">탄소배출 저감으로 구한 소나무 </span><br />
+                  <strong class="num" data-count="6766"></strong
+                  ><span class="unit">그루</span>
+                </div>
+                <img src="img/ideology01.png" alt="ideology" />
+              </li>
+              <li>
+                <div>
+                  <span class="txt">탄소배출량 감소</span> <br />
+                  <strong class="num" data-count="16000"></strong
+                  ><strong>+</strong><span class="unit">CO2e</span>
+                </div>
+                <img src="img/ideology02.png" alt="ideology" />
+              </li>
+              <li>
+                <div>
+                  <span class="txt">누적 이용 거리</span> <br />
+                  <strong class="num" data-count="120000"></strong
+                  ><strong>+</strong><span class="unit">Km</span>
+                </div>
+                <img src="img/ideology03.png" alt="ideology" />
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- .ideology -->
+
+        <section class="section esg">
+          <div class="inner">
+            <h3>ESG</h3>
+            <p>
+              기후테크, 탄소테크 혁신 모빌리티 <br />
+              투명경영 강화, 다양성 및 포용성 확대, 고객 및 사내 임직원과의 소통
+              강화 <br />
+              환경부 선정 2022년 한국형 무공해차 전환 100 [K-EV100] 참여기업
+            </p>
+
+            <h4>Value</h4>
+            <ul>
+              <li>
+                <p>Environment</p>
+                <span>탄소배출 Zero </span>
+              </li>
+              <li>
+                <p>Safe</p>
+                <span>전체 차량 보험 적용 및 지속적인 안전 교육 실시 </span>
+              </li>
+              <li>
+                <p>Movement</p>
+                <span>대중 교통 연계 및 새로운 이동 경험 제공</span>
+              </li>
+            </ul>
+          </div>
+          <!-- .inner -->
+        </section>
+        <!-- .esg -->
+
+        <section class="section function">
+          <div class="inner">
+            <div class="txt">
+              <h3>function</h3>
+              <p>
+                일상을 더 가볍게 만드는 투어지의 주요 기능을 소개합니다.<br />
+                이동, 탐색, 관리까지 한 번에 경험해보세요.
+              </p>
+            </div>
+            <!-- .txt -->
+
+            <ul>
+              <li>
+                <div class="explanation">
+                  <h4>전기자동차 대여</h4>
+                  <p>
+                    도심 속 편안한 이동, <br />
+                    투어지 전기차로 시작하세요. <br />
+                    가까운 대여소에서 차량을 선택하고 <br />
+                    필요한 시간만큼 유연하게 대여할 수 있어요.
+                  </p>
+                </div>
+                <div class="more">
+                  <a href="#"
+                    >learn more
+                    <i class="fa-solid fa-angle-right"></i>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div class="explanation">
+                  <h4>자전거 대여</h4>
+                  <p>
+                    가볍게 타고 싶은 순간, <br />
+                    근처 자전거를 빠르게 찾아보세요. <br />
+                    앱 하나로 대여부터 반납까지 <br />
+                    간단하고 쉽게 해결할 수 있어요.
+                  </p>
+                </div>
+                <div class="more">
+                  <a href="#"
+                    >learn more
+                    <i class="fa-solid fa-angle-right"></i>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div class="explanation">
+                  <h4>여행지 탐색</h4>
+                  <p>
+                    주변의 숨은 명소부터 인기 스팟까지, <br />
+                    지도 기반으로 여행지를 검색해보세요. <br />
+                    추천 코스와 함께 이동부터 탐색까지 <br />
+                    한 번에 연결됩니다.
+                  </p>
+                </div>
+                <div class="more">
+                  <a href="#"
+                    >learn more
+                    <i class="fa-solid fa-angle-right"></i>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div class="explanation">
+                  <h4>이용 관리</h4>
+                  <p>
+                    대여 이력, 결제 내역, 구독권까지 <br />
+                    모든 정보를 한눈에 확인할 수 있어요. <br />
+                    내 이용 스타일에 맞게 <br />
+                    더 편리하게 관리해보세요.
+                  </p>
+                </div>
+                <div class="more">
+                  <a href="#"
+                    >learn more
+                    <i class="fa-solid fa-angle-right"></i>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- .inner -->
+        </section>
+        <!-- .function -->
+        <section class="section manual">
+          <div class="orange">
+            <div class="inner">
+              <div class="menu">
+                <h3>manual</h3>
+                <ul>
+                  <li class="active">전기자동차 대여</li>
+                  <li>전기자동차 반납</li>
+                  <li>자전거 대여/반납</li>
+                  <li>여행지 탐색</li>
+                  <li>이용관리</li>
+                </ul>
+              </div>
+              <!-- .txt -->
+
+              <ul class="mobile">
+                <li class="rent" data-tab="0">
+                  <div class="swiper screen screen-0">
+                    <ul class="swiper-wrapper">
+                      <li class="swiper-slide">
+                        <img src="img/screen/rent01.png" alt="rent" />
+                      </li>
+                      <li class="swiper-slide">
+                        <img src="img/screen/rent02.png" alt="rent" />
+                      </li>
+                      <li class="swiper-slide">
+                        <img src="img/screen/rent03.png" alt="rent" />
+                      </li>
+                      <li class="swiper-slide">
+                        <img src="img/screen/rent04.png" alt="rent" />
+                      </li>
+                      <li class="swiper-slide">
+                        <img src="img/screen/rent05.png" alt="rent" />
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- .screen -->
+
+                  <div class="swiper txt txt-0">
+                    <ul class="swiper-wrapper">
+                      <li class="swiper-slide">
+                        <h3>원하는 대여 방식을 선택해보세요</h3>
+                        <p>
+                          가까운 대여소를 선택한 뒤, <br />
+                          차량 대여 방식을 고를 수 있어요. <br />
+                          ‘구독’ 또는 ‘리턴프리’ 중 하나를 선택하고,<br />
+                          차량 번호와 (구독일 선택 시) 원하는 이용 기간을
+                          설정해보세요. <br />
+                          내게 맞는 방식으로 자유롭게 대여할 수 있습니다.
+                        </p>
+                      </li>
+                      <li class="swiper-slide">
+                        <h3>보증금을 결제하고 픽업을 준비하세요</h3>
+                        <p>
+                          대여 전 보증금 10,000원이 선결제됩니다. <br />
+                          차량 반납이 완료되면 보증금은 전액 환불돼요.<br />
+                          결제 후 15분간은 무료 픽업 시간이 제공되며, <br />
+                          이 시간 안에 차량 촬영까지 완료해야 픽업이 가능합니다.
+                          <br />
+                          시간 내 픽업을 완료하지 않으면 자동 취소될 수 있어요.
+                        </p>
+                      </li>
+                      <li class="swiper-slide">
+                        <h3>차량 위치와 남은 시간을 확인하세요</h3>
+                        <p>
+                          보증금 결제를 완료하면 <br />
+                          차량이 있는 대여소 위치와 남은 시간을 확인할 수
+                          있어요.<br />
+                          무료 픽업 시간 15분 안에 차량을 촬영하면 대여가
+                          시작됩니다. <br />
+                          해당 시간 내에는 자유롭게 대여 취소도 가능합니다.
+                          <br />
+                          픽업 시간이 초과되면 자동으로 대여가 취소돼요.
+                        </p>
+                      </li>
+                      <li class="swiper-slide">
+                        <h3>차량 4면을 정확히 촬영해주세요</h3>
+                        <p>
+                          차량의 앞, 뒤, 좌, 우 총 4면을 촬영해야 합니다.
+                          <br />화면에 표시된 가이드를 참고해 <br />각각의
+                          방향에서 정확히 사진을 찍어주세요. <br />사진은 모든
+                          면을 등록해야 다음 단계로 이동할 수 있어요.
+                          <br />정확한 촬영이 추후 문제 예방에 도움이 됩니다.
+                        </p>
+                      </li>
+                      <li class="swiper-slide">
+                        <h3>이용 정보와 스마트키를 확인하세요</h3>
+                        <p>
+                          이용 중인 차량의 정보는 실시간으로 확인할 수 있어요.
+                          <br />
+                          이용 시간과 요금, 전기차 배터리 잔량이 표시되며,
+                          <br />
+                          스마트키 기능으로 문 열림/잠금, 경적, 비상등 조작도
+                          가능합니다. <br />필요한 기능을 앱 안에서 바로
+                          조절해보세요. <br />
+                          간편하고 안전한 주행을 위한 기능이 준비돼 있어요.
+                        </p>
+                      </li>
+                    </ul>
+
+                    <div class="mobile-slide-btn btn-0">
+                      <div class="prev-btn">
+                        <i class="fa-solid fa-angle-left"></i>
+                        <span>prev</span>
+                      </div>
+                      <div class="next-btn">
+                        <span>next</span>
+                        <i class="fa-solid fa-angle-right"></i>
+                      </div>
+                    </div>
+                    <!-- .mobile-slide-btn -->
+                  </div>
+                  <!-- .txt -->
+                </li>
+
+                <li class="return" data-tab="1">
+                  <div class="swiper screen screen-1">
+                    <ul class="swiper-wrapper">
+                      <li class="swiper-slide">
+                        <img src="img/screen/return01.png" alt="return" />
+                      </li>
+                      <li class="swiper-slide">
+                        <img src="img/screen/return02.png" alt="return" />
+                      </li>
+                      <li class="swiper-slide">
+                        <img src="img/screen/return03.png" alt="return" />
+                      </li>
+                      <li class="swiper-slide">
+                        <img src="img/screen/return04.png" alt="return" />
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="swiper txt txt-1">
+                    <ul class="swiper-wrapper">
+                      <li class="swiper-slide">
+                        <h3>GPS로 반납 위치를 확인해보세요</h3>
+                        <p>
+                          GPS를 통해 현재 위치가 자동 인식되며, <br />
+                          해당 장소가 지정 대여소인지 확인할 수 있어요. <br />
+                          정확한 주차 위치를 입력하면 <br />
+                          다음 사용자에게도 도움이 됩니다. <br />
+                          안전하고 명확한 반납을 위한 첫 단계예요.
+                        </p>
+                      </li>
+                      <li class="swiper-slide">
+                        <h3>올바른 주차를 사진으로 남겨주세요</h3>
+                        <p>
+                          화면에 표시된 가이드를 따라 <br />
+                          차량이 제대로 주차되었는지 사진으로 촬영해주세요.
+                          <br />
+                          정확한 주차 인증은 <br />
+                          차량 손상 및 오해를 줄이는 데 도움이 됩니다. <br />
+                          간단한 촬영으로 안전하게 반납하세요.
+                        </p>
+                      </li>
+                      <li class="swiper-slide">
+                        <h3>반납 전 필수 항목을 확인해주세요</h3>
+                        <p>
+                          차 안에 두고 간 소지품은 없는지, <br />
+                          문은 제대로 잠겼는지 확인해주세요. <br />
+                          간단한 체크만으로 분실이나 사고를 방지할 수 있어요.
+                          <br />
+                          모든 항목을 체크해야 반납이 완료됩니다.
+                        </p>
+                      </li>
+                      <li class="swiper-slide">
+                        <h3>이용 내역을 확인하고 결제하세요</h3>
+                        <p>
+                          대여소, 이용 시간, 결제 금액을 <br />
+                          한눈에 보기 쉽게 정리해드려요. <br />
+                          할인 쿠폰도 바로 적용할 수 있어 <br />
+                          더 합리적으로 이용할 수 있어요. <br />
+                          결제 전 정보를 꼭 확인해주세요!
+                        </p>
+                      </li>
+                    </ul>
+
+                    <div class="mobile-slide-btn btn-1">
+                      <div class="prev-btn">
+                        <i class="fa-solid fa-angle-left"></i>
+                        <span>prev</span>
+                      </div>
+                      <div class="next-btn">
+                        <span>next</span>
+                        <i class="fa-solid fa-angle-right"></i>
+                      </div>
+                    </div>
+                    <!-- .mobile-slide-btn -->
+                  </div>
+                </li>
+
+                <li class="bicycle" data-tab="2">
+                  <div class="swiper screen screen-2">
+                    <ul class="swiper-wrapper">
+                      <li class="swiper-slide">
+                        <img src="img/screen/bicycle01.png" alt="bicycle" />
+                      </li>
+                      <li class="swiper-slide">
+                        <img src="img/screen/bicycle02.png" alt="bicycle" />
+                      </li>
+                      <li class="swiper-slide">
+                        <img src="img/screen/bicycle03.png" alt="bicycle" />
+                      </li>
+                      <li class="swiper-slide">
+                        <img src="img/screen/bicycle04.png" alt="bicycle" />
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="swiper txt txt-2">
+                    <ul class="swiper-wrapper">
+                      <li class="swiper-slide">
+                        <h3>QR 코드를 스캔해 대여를 시작하세요</h3>
+                        <p>
+                          자전거 핸들 아래의 QR 코드를 카메라로 인식하면 <br />
+                          대여가 바로 시작됩니다. <br />
+                          만약 카메라 사용이 어려운 상황이라면, <br />
+                          숫자 코드를 수기로 입력해도 대여할 수 있어요. <br />
+                          간편하게, 누구나 쉽게 이용할 수 있습니다.
+                        </p>
+                      </li>
+                      <li class="swiper-slide">
+                        <h3>주의사항을 확인하고 대여를 완료하세요</h3>
+                        <p>
+                          안전한 이용을 위해 <br />
+                          주의사항을 꼭 읽고 확인해 주세요. <br />
+                          모든 내용을 체크한 후 <br />
+                          대여 완료 알림이 표시되면 바로 출발할 수 있어요.
+                          <br />
+                          주의사항 확인은 나와 모두의 안전을 위한 필수
+                          절차입니다.
+                        </p>
+                      </li>
+                      <li class="swiper-slide">
+                        <h3>내 위치와 이용 정보를 한눈에 확인하세요</h3>
+                        <p>
+                          이용 중인 자전거의 위치를 <br />
+                          지도에서 실시간으로 확인할 수 있어요. <br />
+                          요금 정보와 이용 시간도 함께 표시되며, <br />
+                          경적 버튼으로 자전거 위치를 쉽게 찾을 수 있습니다.
+                          <br />
+                          필요한 정보는 앱 안에서 바로 확인해보세요.
+                        </p>
+                      </li>
+                      <li class="swiper-slide">
+                        <h3>스테이션에 주차 후 꼭 촬영해주세요</h3>
+                        <p>
+                          갓길이나 무단 구역엔 주차할 수 없어요. <br />
+                          반드시 지정된 대여소(스테이션)에 반납해야 하며, <br />
+                          주차 사진을 촬영해야 반납이 완료됩니다. <br />
+                          촬영 가이드를 따라 정확히 남겨주세요. <br />
+                          다음 사용자와의 매너도 함께 지켜요!
+                        </p>
+                      </li>
+                    </ul>
+
+                    <div class="mobile-slide-btn btn-2">
+                      <div class="prev-btn">
+                        <i class="fa-solid fa-angle-left"></i>
+                        <span>prev</span>
+                      </div>
+                      <div class="next-btn">
+                        <span>next</span>
+                        <i class="fa-solid fa-angle-right"></i>
+                      </div>
+                    </div>
+                    <!-- .mobile-slide-btn -->
+                  </div>
+                </li>
+
+                <li class="trip" data-tab="3">
+                  <div class="swiper screen screen-3">
+                    <ul class="swiper-wrapper">
+                      <li class="swiper-slide">
+                        <img src="img/screen/trip01.png" alt="trip" />
+                      </li>
+                      <li class="swiper-slide">
+                        <img src="img/screen/trip02.png" alt="trip" />
+                      </li>
+                      <li class="swiper-slide">
+                        <img src="img/screen/trip03.png" alt="trip" />
+                      </li>
+                      <li class="swiper-slide">
+                        <img src="img/screen/trip04.png" alt="trip" />
+                      </li>
+                      <li class="swiper-slide">
+                        <img src="img/screen/trip05.png" alt="trip" />
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="swiper txt txt-3">
+                    <ul class="swiper-wrapper">
+                      <li class="swiper-slide">
+                        <h3>인기 여행지를 한눈에 둘러보세요</h3>
+                        <p>
+                          지금 가장 인기 있는 부산 여행지를 <br />
+                          홈 화면에서 바로 확인할 수 있어요. <br />
+                          추천 명소부터 가볍게 둘러볼 스팟까지, <br />
+                          투어지를 타고 떠나기 좋은 곳들을 소개해드려요. <br />
+                          앱에서 여행이 시작됩니다.
+                        </p>
+                      </li>
+                      <li class="swiper-slide">
+                        <h3>가고 싶은 곳을 검색해보세요</h3>
+                        <p>
+                          어디든 검색창에 입력해보세요. <br />
+                          정확한 장소가 아니어도 <br />
+                          근처의 추천 여행지를 함께 안내해드려요. <br />
+                          고민될 땐 추천 키워드로 도움을 받아보세요. <br />
+                          원하는 곳을 쉽게 찾을 수 있어요.
+                        </p>
+                      </li>
+                      <li class="swiper-slide">
+                        <h3>여행지 정보와 이동까지 한 번에</h3>
+                        <p>
+                          여행지 소개와 함께 <br />
+                          근처 공영주차장 정보까지 확인할 수 있어요. <br />
+                          전기차 이용 고객도 더 편리하게 방문 가능해요. <br />
+                          가까운 대여소 안내 버튼을 통해 <br />
+                          차량 대여로 자연스럽게 이어집니다.
+                        </p>
+                      </li>
+                      <li class="swiper-slide">
+                        <h3>부산잘알 에디터의 추천 코스를 만나보세요</h3>
+                        <p>
+                          에디터가 직접 골라 소개하는 <br />
+                          테마별 부산 여행지를 모아봤어요. <br />
+                          투어지로 이동하기 좋은 코스만 골라 <br />
+                          쉽고 즐거운 여행을 도와드립니다. <br />
+                          어디부터 가야 할지 고민될 땐 이곳부터!
+                        </p>
+                      </li>
+                      <li class="swiper-slide">
+                        <h3>지역별로 여행지를 정리했어요</h3>
+                        <p>
+                          어느 구에 뭐가 있는지 잘 모를 땐 <br />
+                          지역구별 추천 페이지를 참고해보세요. <br />
+                          내가 있는 곳 주변부터, <br />
+                          여행 코스 짜기 좋은 동선까지 쉽게 확인할 수 있어요.
+                          <br />
+                          부산의 모든 매력을 구별로 탐색해보세요.
+                        </p>
+                      </li>
+                    </ul>
+
+                    <div class="mobile-slide-btn btn-3">
+                      <div class="prev-btn">
+                        <i class="fa-solid fa-angle-left"></i>
+                        <span>prev</span>
+                      </div>
+                      <div class="next-btn">
+                        <span>next</span>
+                        <i class="fa-solid fa-angle-right"></i>
+                      </div>
+                    </div>
+                    <!-- .mobile-slide-btn -->
+                  </div>
+                </li>
+
+                <li class="history" data-tab="4">
+                  <div class="swiper screen screen-4">
+                    <ul class="swiper-wrapper">
+                      <li class="swiper-slide">
+                        <img src="img/screen/history01.png" alt="history" />
+                      </li>
+                      <li class="swiper-slide">
+                        <img src="img/screen/history02.png" alt="history" />
+                      </li>
+                      <li class="swiper-slide">
+                        <img src="img/screen/history03.png" alt="history" />
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="swiper txt txt-4">
+                    <ul class="swiper-wrapper">
+                      <li class="swiper-slide">
+                        <h3>이용 내역을 한눈에 확인하세요</h3>
+                        <p>
+                          전기차와 자전거의 이용 내역을 <br />
+                          히스토리 형식으로 모아볼 수 있어요. <br />
+                          현재 이용 중인 차량은 가장 상단에 표시되어 <br />
+                          요금, 이용 시간 등 실시간 정보도 확인할 수 있어요.
+                          <br />
+                          이용 중 관리도 이 화면에서 간편하게 할 수 있어요.
+                        </p>
+                      </li>
+                      <li class="swiper-slide">
+                        <h3>지난 이용 기록도 자세히 확인해보세요</h3>
+                        <p>
+                          이전 이용 내역의 상세 정보를 <br />
+                          날짜별로 확인할 수 있어요. <br />
+                          이용 시간, 대여소 위치, 결제 금액까지 <br />
+                          모두 정리돼 있어 관리가 쉬워요. <br />
+                          필요할 땐 영수증도 바로 확인할 수 있어요.
+                        </p>
+                      </li>
+                      <li class="swiper-slide">
+                        <h3>궁금한 점은 언제든 문의하세요</h3>
+                        <p>
+                          이용 중이든, 이용이 끝난 후든 <br />
+                          궁금한 점이 생기면 바로 문의해보세요. <br />
+                          AI 채팅으로 빠르게 도와드리며, <br />
+                          필요한 경우 상담원 연결도 가능해요. <br />
+                          투어지는 언제나 가까이에 있어요.
+                        </p>
+                      </li>
+                    </ul>
+
+                    <div class="mobile-slide-btn btn-4">
+                      <div class="prev-btn">
+                        <i class="fa-solid fa-angle-left"></i>
+                        <span>prev</span>
+                      </div>
+                      <div class="next-btn">
+                        <span>next</span>
+                        <i class="fa-solid fa-angle-right"></i>
+                      </div>
+                    </div>
+                    <!-- .mobile-slide-btn -->
+                  </div>
+                </li>
+              </ul>
+              <!-- .mobile -->
+            </div>
+            <!-- .inner -->
+          </div>
+          <!-- .orange -->
+        </section>
+        <!-- .manual -->
+
+        <section class="section partner">
+          <div class="partner-inner">
+            <h2>business<span>partner</span></h2>
+
+            <div class="partner-swipers">
+              <div class="partner-slider-container">
+                <div class="partner-slider">
+                  <div class="partner-slide">
+                    <img src="img/partner01.png" alt="부산도시공사" />
+                  </div>
+                  <div class="partner-slide">
+                    <img src="img/partner02.png" alt="부산관광공사" />
+                  </div>
+                  <div class="partner-slide">
+                    <img src="img/partner03.png" alt="부산시티투어" />
+                  </div>
+                  <div class="partner-slide">
+                    <img src="img/partner04.png" alt="부산경제진흥원" />
+                  </div>
+                  <div class="partner-slide">
+                    <img src="img/partner05.png" alt="HUMAX holdings" />
+                  </div>
+                  <div class="partner-slide">
+                    <img src="img/partner06.png" alt="한국관광공사" />
+                  </div>
+                  <div class="partner-slide">
+                    <img src="img/partner07.png" alt="신용보증기금" />
+                  </div>
+                  <div class="partner-slide">
+                    <img src="img/partner08.png" alt="Sun and fun Haeundae" />
+                  </div>
+                  <!-- 무한 루프용 복제 -->
+                  <div class="partner-slide">
+                    <img src="img/partner01.png" alt="부산도시공사" />
+                  </div>
+                  <div class="partner-slide">
+                    <img src="img/partner02.png" alt="부산관광공사" />
+                  </div>
+                  <div class="partner-slide">
+                    <img src="img/partner03.png" alt="부산시티투어" />
+                  </div>
+                  <div class="partner-slide">
+                    <img src="img/partner04.png" alt="부산경제진흥원" />
+                  </div>
+                  <div class="partner-slide">
+                    <img src="img/partner05.png" alt="HUMAX holdings" />
+                  </div>
+                  <div class="partner-slide">
+                    <img src="img/partner06.png" alt="한국관광공사" />
+                  </div>
+                  <div class="partner-slide">
+                    <img src="img/partner07.png" alt="신용보증기금" />
+                  </div>
+                  <div class="partner-slide">
+                    <img src="img/partner08.png" alt="Sun and fun Haeundae" />
+                  </div>
+                </div>
+              </div>
+              <!-- .partner-slider-container -->
+
+              <div class="partner-slider-container reverse">
+                <div class="partner-slider">
+                  <div class="partner-slide">
+                    <img src="img/partner01.png" alt="부산도시공사" />
+                  </div>
+                  <div class="partner-slide">
+                    <img src="img/partner02.png" alt="부산관광공사" />
+                  </div>
+                  <div class="partner-slide">
+                    <img src="img/partner03.png" alt="부산시티투어" />
+                  </div>
+                  <div class="partner-slide">
+                    <img src="img/partner04.png" alt="부산경제진흥원" />
+                  </div>
+                  <div class="partner-slide">
+                    <img src="img/partner05.png" alt="HUMAX holdings" />
+                  </div>
+                  <div class="partner-slide">
+                    <img src="img/partner06.png" alt="한국관광공사" />
+                  </div>
+                  <div class="partner-slide">
+                    <img src="img/partner07.png" alt="신용보증기금" />
+                  </div>
+                  <div class="partner-slide">
+                    <img src="img/partner08.png" alt="Sun and fun Haeundae" />
+                  </div>
+                  <!-- 무한 루프용 복제 -->
+                  <div class="partner-slide">
+                    <img src="img/partner01.png" alt="부산도시공사" />
+                  </div>
+                  <div class="partner-slide">
+                    <img src="img/partner02.png" alt="부산관광공사" />
+                  </div>
+                  <div class="partner-slide">
+                    <img src="img/partner03.png" alt="부산시티투어" />
+                  </div>
+                  <div class="partner-slide">
+                    <img src="img/partner04.png" alt="부산경제진흥원" />
+                  </div>
+                  <div class="partner-slide">
+                    <img src="img/partner05.png" alt="HUMAX holdings" />
+                  </div>
+                  <div class="partner-slide">
+                    <img src="img/partner06.png" alt="한국관광공사" />
+                  </div>
+                  <div class="partner-slide">
+                    <img src="img/partner07.png" alt="신용보증기금" />
+                  </div>
+                  <div class="partner-slide">
+                    <img src="img/partner08.png" alt="Sun and fun Haeundae" />
+                  </div>
+                </div>
+              </div>
+              <!-- .partner-slider-container.reverse -->
+            </div>
+            <!-- .partner-swipers -->
+          </div>
+          <!-- .partner-inner -->
+
+          <footer>
+            <div class="inner">
+              <div class="f-logo">
+                <img src="img/f-logo.png" alt="tourzy" />
+              </div>
+
+              <div class="f-txt">
+                <ul class="tnc">
+                  <li><a href="#">회원약관</a></li>
+                  <li><a href="#">개인정보 처리 방침</a></li>
+                  <li><a href="#">제휴 안내</a></li>
+                  <li><a href="#">투어지 스테이션</a></li>
+                  <li><a href="#">회원약관</a></li>
+                  <li><a href="#">자동차 대여약관</a></li>
+                </ul>
+                <!-- .tnc -->
+
+                <p>
+                  투어지는 여행지로 유입되는 차량수를 줄여 쾌적한 이동환경을
+                  조성하고 친환경 전기차를 이용하여 CO2배출과 흡수 ZERO를 목표로
+                  탄소 중립형 그린 스마트 여행을 실천합니다. <br />
+                  부산 해운대, 오시리아 관광단지, 경주 보문단지, 황리단길에서
+                  투어지와 “친환경 공정여행”을 함께해 주세요.
+                </p>
+
+                <ul class="info">
+                  <li>주소<span>부산광역시 해운대구 APEC로30 108호 </span></li>
+                  <li>대표번호<span>+82-51-740-4080</span></li>
+                  <li>카카오톡 채널<span>tourzy</span></li>
+                  <li>이용 및 제휴문의<span>tourzy@naver.com</span></li>
+                </ul>
+              </div>
+              <!-- .f-txt -->
+
+              <ul class="sns">
+                <li>
+                  <a href="#"
+                    ><img src="img/sns01.png" alt="페이스북 바로가기"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="img/sns02.png" alt="카카오톡 바로가기"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="img/sns03.png" alt="인스타그램 바로가기"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="img/sns04.png" alt="유튜브 바로가기"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+            <!-- .inner -->
+          </footer>
+        </section>
+      </div>
+      <!-- #fullpage -->
+    </div>
+    <!-- .wrap -->
+
+    <script
+      src="https://kit.fontawesome.com/55f2933992.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
